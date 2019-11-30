@@ -12,6 +12,16 @@ public class EvenOdd {
                 numbers.stream()
                 .filter(e->e%2==0)
                 .collect(Collectors.toList());
+        System.out.println("EVEN");
         even.forEach(System.out::println);
+        System.out.println();
+        List<Integer> odd =
+                numbers.stream()
+                .filter(e->e%2==1)
+                .collect(Collectors.toList());
+        System.out.println();
+        System.out.println("ODD");
+        odd.forEach(System.out::println);
+
     }
 }
